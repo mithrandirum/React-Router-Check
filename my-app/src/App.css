@@ -1,0 +1,122 @@
+
+
+
+
+body {
+  background-color: #22245b;
+  color : white;
+  margin : 0;
+  font-family:sans-serif;
+  
+}
+
+.root { 
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+img {
+ width : 250px;
+ height : 400px
+
+}
+.App {
+  display: flex;
+  justify-content : space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie img {
+  max-width : 100%
+}
+.movie {
+  margin-top : 1rem;
+  background-color: #373b49;
+  border-radius: 7px;
+  box-shadow: 0px -3px 5px rgba(0,0,0,0.1);
+  overflow : hidden;
+  width : 250px;
+  position : relative
+  
+
+ 
+}
+
+.movie-info { 
+  display :flex;
+  padding : 0.5rem;
+  align-items : center;
+  justify-content: space-between;
+}
+
+.movie-info h3 {
+  margin : 0
+}
+
+.movie-over{ 
+  position : absolute; 
+  bottom : 0;
+  left : 0;
+  right : 0;
+  background-color : white;
+  color : #373b49;
+  padding : 1rem;
+  transform : translateY(102%);
+  transition : transform 0.3s ease-in-out; 
+  overflow: auto;
+  max-height : 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  
+}
+
+.movie:hover .movie-over { 
+  transform : translateY(0%)
+}
+
+
+header { 
+  background-color: #22245b;
+  padding : 3rem;
+  
+  
+}
+.search{ 
+  font-family: inherit;
+  font-size : 1.2rem;
+  border : 2px solid #373b49;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 0.5rem, 1.5rem;
+  color : #70737c
+}
+
+
+.btn {
+  font-family: inherit;
+  font-size : 1.2rem;
+  margin-top: 2rem;
+  background-color : #d0d7ec;
+  border-radius:  4px;
+  box-shadow: 3px 6px 5px rgba(0,0,0,0.1);
+  cursor : pointer;
+  transition : transform 0.6s ease-in-out
+}
+.btn:hover {
+ background-color : white
+}
+
+input[type = "radio"] {
+
+  display : none ;
+  transition : color 200ms
+}
+
+
+.star {
+  cursor : pointer;
+}
